@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Blockchain lecture</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var revealJSPath = "../../reveal.js/";
+
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = revealJSPath + (window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css');
+			document.getElementsByTagName('head')[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+                    <img src="./img/logo.svg" style="border: none;background-color: #222" />
+
+                    <ul>
+                        <li>Криптография (криптоанализ)</li>
+                        <li>Распределенные сети (вычисления)</li>
+                        <li>Децентрализированные приложения - dApps (Blockchain dApps)</li>
+                        <li style="color: #f99">Blockchain</li>
+                        <li style="color: #f99">Умные контракты (smart-contracts)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 style="color:#42affa">Криптография (криптоанализ)</h3>
+                    <ul>
+                        <li>Шифры</li>
+                        <li>Хеш-функции</li>
+                        <li>Цифровые подписи</li>
+                        <li>Протоколы аутентификации</li>
+                        <li>Протоколы распределения ключей</li>
+                    </ul>
+
+                    <br />
+                    <img src="./img/img01.jpg" style="background-color: #fff;height:200px;border: none" />
+                </section>
+
+                <section>
+                    <h3 style="color:#42affa">Распределенные вычисления</h3>
+
+                    Распределенные вычисления - выделение ресурсов, как <em style="color:#42affa">аппаратных</em> так и <em style="color:#42affa">программных</em> каждым узлом (компьютером) сети
+                    <br />
+
+                    <img src="./img/img02.png" style="background-color: #fff" />
+                </section>
+
+                <section>
+
+                    <section>
+                        <h3 style="color:#42affa">Децентрализированные приложения – dApps</h3>
+
+                            ... приложения работающие в P2P сетях, а не на одном компьютере.
+                            Это разновидность ПО специально спроектированная для существования только в Internet
+                            и не имеющая контроля из единого центра
+                    </section>
+
+                    <section>
+                        <h3 style="color:#42affa">Blockchain dApps</h3>
+
+                        <ul>
+                            <li>Приложения с полностью открытым исходным кодом (смарт контракт, клиентский скрипт)</li>
+                            <li>Данные и записи об операциях должны сохраняться с использованием криптографии</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h3 style="color:#42affa">Blockchain</h3>
+
+
+                    <em style="color:#42affa">цепочка блоков</em>, это непрерывно растущий список записей (блоков), которые связаны между собой и защищены криптографией
+                    <br />
+
+                    <img src="./img/img03.png"
+                         style="background-color: #fff" />
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1 style="color:#42affa">ETHEREUM</h1>
+                        <img src="./img/img04.jpg" style="border: none" />
+                    </section>
+
+                    <section>
+                        <h3 style="color:#42affa">ETHEREUM</h3>
+
+                        <span style="text-align: left">
+                            <p style="text-align: left">Ethereum это</p>
+
+                            <ul>
+                                <li>децентрализированная</li>
+                                <li>прозрачная</li>
+                                <li>устойчивая к манипуляциям</li>
+                                <li>аутентифицированная</li>
+                                <li>публично доступная</li>
+                            </ul>
+                            <p style="text-align: left">база данных / виртуальный компьютер (<em>Ethereum Virtual Machine - EVM</em>)</p>
+                        </span>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1 style="color:#42affa">Smart-contracts</h1>
+                        <h3 style="color:#42affa">Умные контракты</h3>
+                    </section>
+
+                    <section>
+                        <h3 style="color:#42affa">Что такое смарт-контракт?</h3>
+
+                        <em style="color:#42affa">Смарт-контракт</em> (англ. Smart contract - <em style="color:#42affa">умный контракт</em>)
+                        - компьютерный алгоритм, предназначенный для заключения и поддержания самоисполняемых контрактов,
+                        выполняемых в блокчейн-среде.
+                        <br />
+                        Такие контракты записываются в виде кода, существующего в распределенном реестре - блокчейне.
+                        Простыми словами, умные контракты позволяют обмениваться активами, не прибегая к услугам посредников.
+                    </section>
+
+                    <section>
+                        <h3 style="color:#42affa">В чем фишка смарт-контрактов?</h3>
+
+                        <ul>
+                            <li style="font-size: 32px">
+                                СК дают возможность выполнять надежные и конфиденциальные
+                                транзакции без участия внешних посредников (нотариусов, банков, государственных органов)
+                            </li>
+                            <li style="font-size: 32px">
+                                транзакции являются прослеживаемыми, прозрачными и необратимыми
+                            </li>
+                            <li style="font-size: 32px">
+                                СК не только содержат информацию об обязательствах сторон и санкциях
+                                за их нарушение, но и сами автоматически обеспечивают выполнение всех условий договора
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+                        <h3 style="color:#42affa">Как появились умные контракты?</h3>
+
+                        <ul>
+                            <li style="font-size: 32px">
+                                <b style="color:#42affa">[1994]</b> Первые идеи смарт-контрактов были предложены <em style="color: #f99">Ником Сабо</em>
+                                (идея использования математического алгоритма для проведения сделок с полным
+                                контролем над их выполнением)
+                            </li>
+                            <li style="font-size: 32px">
+                                <b style="color:#42affa">[2009]</b> Впервые идеи Сабо воплотились на практике вместе с появлением первой криптовалюты
+                                <em style="color:#42affa">Bitcoin</em> (<em style="color: #f99">Сатоши Накамото</em>) и лежащей в ее основе технологии блокчейн (<u>тьюринг-неполные</u>)
+                            </li>
+                            <li style="font-size: 32px">
+                                <b style="color:#42affa">[2013]</b> Широкое практическое применение смарт-контракты получили с появлением и
+                                развитием проекта <em style="color:#42affa">Ethereum</em> его основателем <em style="color: #f99">Виталиком Бутериным</em> (<u>тьюринг-полные</u>)
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+                        <h3 style="color:#42affa">Обязательные атрибуты смарт-контракта</h3>
+
+                        <ul>
+                            <li style="font-size: 30px">
+                                использование методов электронной подписи на основе публичных и приватных ключей, имеющихся у двух или более сторон соглашения
+                            </li>
+                            <li style="font-size: 30px">
+                                наличие приватной децентрализованной среды (например, Ethereum), в которую записываются смарт-контракты и которая поддерживает входы и выходы для оракулов, обеспечивающих связь реального и цифрового мира
+                            </li>
+                            <li style="font-size: 30px">
+                                сам предмет договора и наличие необходимых для его исполнения инструментов (криптовалютных расчетных счетов, программ-оракулов и т. д.)
+                            </li>
+                            <li style="font-size: 30px">
+                                точно описанные условия его исполнения, которые участники договора подтверждают подписью, а также достоверность источника цифровых данных
+                            </li>
+                        </ul>
+
+                    </section>
+
+                </section>
+
+                <section>
+                    <h3 style="color:#42affa">О команде</h3>
+                    <img src="./img/logo.svg" style="border: none;background-color: #222" />
+
+                    <div style="clear: both"></div>
+                    <ul style="font-size: 34px">
+                        <li>Бесплатная стажировка и обучение основам использования технологий с которыми мы работаем (JavaScript (NodeJS), Web3, Solidity)</li>
+                        <li>Хорошие условия для профессионального роста: разработка софта нового поколения с использованием молодых развивающихся технологий</li>
+                        <li>Регулярные обучающие семинары, лекции и мастер-классы (Blockchain, криптография, смарт-контракты, JavaScript)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 style="color:#42affa">Контакты</h3>
+
+                    Dmytro Zarezenko (<a>@dzarezenko</a>)
+
+                    <p style="text-align: left">
+                        E-mail:<br />
+                        <a href="mailto:dmytro.zarezenko@gmail.com" target="_blank">dmytro.zarezenko@gmail.com</a> (personal)<br />
+                        <a href="mailto:dmytro@blocksoft.biz" target="_blank">dmytro@blocksoft.biz</a> (corporate)<br />
+                        <a href="mailto:students@blocksoft.biz" target="_blank" style="color: #f99;text-decoration: underline">students@blocksoft.biz</a> (students)
+                        <img src="./img/qr.png" style="border: none;float: right" />
+                        <br />
+                        <br />
+                        URL: <a href="https://blocksoftlab.com/" target="_blank">https://blocksoftlab.com/</a>
+                    </p>
+
+                    <div style="clear: both"></div>
+                    <img src="./img/logo.svg" style="border: none;background-color: #222" />
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: revealJSPath + 'plugin/markdown/marked.js' },
+					{ src: revealJSPath + 'plugin/markdown/markdown.js' },
+					{ src: revealJSPath + 'plugin/notes/notes.js', async: true },
+					{ src: revealJSPath + 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
